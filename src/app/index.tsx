@@ -46,6 +46,7 @@ export default function HomeScreen() {
 
 //  StyleSheet API
 
+/*
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function HomeScreen() {
@@ -76,4 +77,45 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
 });
+*/
 
+
+// Update Home Screen with Global Styles
+/*
+import { StyleSheet, Text, ScrollView } from 'react-native';
+import { globalStyles } from '@/styles/global';
+
+export default function HomeScreen() {
+  return (
+    <ScrollView style={globalStyles.container}>
+      <Text style={globalStyles.title}>My App</Text>
+      <Text style={styles.date}>Monday, March 16</Text>
+    </ScrollView>
+  );
+}
+
+const styles = StyleSheet.create({
+  date: {
+    fontSize: 14,
+    color: '#a0a0b0',
+    marginTop: 4,
+    marginBottom: 30,
+  },
+});
+
+*/
+
+// Update Home Screen With Header
+
+import { globalStyles } from '@/styles/global';
+import { Text, ScrollView } from 'react-native';
+import HomeHeader from '@/components/HomeHeader';
+
+export default function HomeScreen() {
+  return (
+    <ScrollView style={globalStyles.container}>
+      <Text style={globalStyles.title}>My App</Text>
+      <HomeHeader />
+    </ScrollView>
+  );
+}
