@@ -39,6 +39,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "845a3ac9-67ec-41d2-8ef8-dd56c8ec699d"
+      }
+    },
+    "owner": "belema7s-team"
   }
 }
