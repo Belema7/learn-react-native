@@ -1,17 +1,21 @@
-import { Platform, Text, View } from 'react-native';
+// import { Platform, Text, View } from 'react-native';
 
 //  Checking The Platform
-// export default function HomeScreen() {
-//   return (
-//     <View>
-//       <Text>Welcome to Macrozone!</Text>
-//       <Text>Running on: {Platform.OS}</Text>
-//     </View>
-//   );
-// }
 
+/*
+export default function HomeScreen() {
+  return (
+    <View>
+      <Text>Welcome to Macrozone!</Text>
+      <Text>Running on: {Platform.OS}</Text>
+    </View>
+  );
+}
+*/
 
 //  Checking The Device Information
+
+/*
 import * as Device from 'expo-device';
 
 export default function HomeScreen() {
@@ -25,3 +29,51 @@ export default function HomeScreen() {
     </View>
   );
 }
+  */
+
+// Inline Styling
+/*
+import { Text, View } from 'react-native';
+
+export default function HomeScreen() {
+  return (
+   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#f0f0f0',padding: 20 }}>
+    <Text>Hello World</Text>
+  </View>
+  );
+}
+*/
+
+//  StyleSheet API
+
+import { StyleSheet, Text, View } from 'react-native';
+
+export default function HomeScreen() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>My App</Text>
+      <Text style={styles.date}>Monday, March 16</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#1a1a2e',
+    paddingTop: 60,
+    paddingHorizontal: 20,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#ffffff',
+  },
+  date: {
+    fontSize: 14,
+    color: '#a0a0b0',
+    marginTop: 4,
+    marginBottom: 30,
+  },
+});
+
