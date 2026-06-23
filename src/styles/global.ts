@@ -1,12 +1,12 @@
 import { StyleSheet } from 'react-native';
 
 export const colors = {
-  background: '#1a1a2e',
+  background: '#D9CEB2',
   header: '#242444',
   surface: '#2a2a4a',
   primary: '#4fc3f7',
-  text: '#ffffff',
-  textSecondary: '#a0a0b0',
+  text: '#031634',
+  textSecondary: '#7A6A53',
   alert: '#ff5252',
 };
 
@@ -39,3 +39,5 @@ export const globalStyles = StyleSheet.create({
     alignItems: 'center',
   },
 });
+
+
